@@ -1,0 +1,24 @@
+<!doctype html>
+	<html lang='pl'>
+		<head>
+			<meta charset="UTF-8" />
+			<title>Konwerter stopni Celcjusza na stopnie Fahrenheita</title>
+		</head>
+		
+		<body>
+			<input type='number' placeholder='Wartość w stopniach Celcjusza' id='celcius' />
+				<p />
+			<input type='number' placeholder='Wartość w Fahrenheitach' id='fahrenheit' disabled />
+			<input type='button' onClick='c2f()'value='Wykonaj'/>
+		</body>
+		
+		<script>
+			var cel=document.getElementById('celcius')
+			var far=document.getElementById('fahrenheit')
+			
+			function c2f() {
+				far.value=(1.8*cel.value)+32
+				alert(cel.value+' Celcjusz równa się '+far.value+' fahrenheit')
+			}
+			
+		</script>
